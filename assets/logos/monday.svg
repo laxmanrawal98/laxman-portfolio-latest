@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="Monday.com">
+  <rect x="1.5" y="4.5" width="15" height="4" rx="2" fill="#FF3D57"/>
+  <rect x="1.5" y="10" width="11" height="4" rx="2" fill="#FFCB00"/>
+  <circle cx="19.5" cy="12" r="3" fill="#00CA72"/>
+</svg>
