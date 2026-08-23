@@ -616,7 +616,7 @@
           }
         });
       }
-    }, 7000);
+    }, 5000);
 
     const tick = (now) => {
       const dt = Math.min((now - (tick.prev || now)) / 1000, 0.032);
