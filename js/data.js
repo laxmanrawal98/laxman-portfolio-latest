@@ -2,8 +2,8 @@
 window.LR_DATA = {
   hero: {
     name: "I'm Laxman Rawal",
-    role: "Ex - Founder at Scalify With AI",
-    bio: "I helped small and medium size enterprises implement and integrate AI into their day to day business activities.",
+    role: "Founder’s Office | Program Manager | AI Solutions Architect | Agentic Workflows & Multi-Agent Systems",
+    bio: "AI-native operator and ex-founder specializing in multi-agent workflows, voice agents, and ERP automation instrumented against real P&L impact. Shipped GenAI systems across construction, real estate, and healthcare while driving 0 to 1 initiatives with complete ownership in high-ambiguity environments.",
     photo: "assets/profile.png",
     connect: {
       label: "Connect With me:",
