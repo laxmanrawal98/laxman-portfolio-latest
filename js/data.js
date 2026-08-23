@@ -207,15 +207,9 @@ window.LR_DATA = {
       brief:
         "Client: Integrated Real Estate Developer & Master Brokerage Firm\n\nIndustry: Commercial & Residential Real Estate (Property Development, Construction, & High-Ticket Brokerage)\n\nTarget market: UAE & Pune, India\n\nBusiness Model: Hybrid model operating simultaneously as a Property Developer (building and selling proprietary inventory) and a Real Estate Brokerage (marketing third-party inventory and channel partner management).",
       problems: [
-        "1. Inefficient Multi-Channel Lead Management & Lack of High-Intent Prospect Discovery",
-        "Inbound leads across Dubai and Pune portals (Bayut, Property Finder, MagicBricks, Meta Ads) were scattered across disparate systems.",
-        "Sales teams struggled to identify high-net-worth individuals (HNWIs) and NRIs who fit the ideal buyer persona for luxury off-plan properties.",
-        "2. High Drop-Off in High-Ticket Lead Nurturing & Site Visit Conversions",
-        "Because properties carried multi-crore/multi-million AED price tags, cold leads required extensive warming before agreeing to a physical site visit.",
-        "High-ticket leads arriving outside office hours were left unattended, causing severe lead drop-off and low site-visit conversion rates.",
-        "3. Exorbitant Media Production Overhead & Slow Content Turnaround",
-        "Marketing high-ticket properties required hiring professional videographers, staging crews, and drone operators for every listing and construction update.",
-        "Content creation costs ballooned to thousands of dollars per property, delaying campaign launches and burning marketing budgets before lead acquisition even began.",
+        "Inefficient Multi-Channel Lead Management & Lack of High-Intent Prospect Discovery\nInbound leads across Dubai and Pune portals (Bayut, Property Finder, MagicBricks, Meta Ads) were scattered across disparate systems.\nSales teams struggled to identify high-net-worth individuals (HNWIs) and NRIs who fit the ideal buyer persona for luxury off-plan properties.",
+        "High Drop-Off in High-Ticket Lead Nurturing & Site Visit Conversions\nBecause properties carried multi-crore/multi-million AED price tags, cold leads required extensive warming before agreeing to a physical site visit.\nHigh-ticket leads arriving outside office hours were left unattended, causing severe lead drop-off and low site-visit conversion rates.",
+        "Exorbitant Media Production Overhead & Slow Content Turnaround\nMarketing high-ticket properties required hiring professional videographers, staging crews, and drone operators for every listing and construction update.\nContent creation costs ballooned to thousands of dollars per property, delaying campaign launches and burning marketing budgets before lead acquisition even began.",
       ],
       solutions: [
         "AI-Powered Unified Dashboard & LinkedIn Lookalike Prospecting Engine\nBuilt a centralized Real Estate CRM and Lead Intelligence Dashboard.\nIntegrated directly with property portals, ad campaigns, and the LinkedIn API. The system analyzes existing high-ticket buyers' professional profiles, wealth indicators, and company roles to automatically discover, scrape, and score lookalike NRI and HNWI leads in real time.",
@@ -235,13 +229,16 @@ window.LR_DATA = {
         { value: "40%", label: "40% Reduction in Cost Per Acquisition (CPA)" },
         { value: "3.5x", label: "3.5x Increase in Site-Visit Booking Rate" },
       ],
-      videos: [],
-      links: [
+      videos: [
         {
-          href: "https://aistudio.google.com/apps/95caadc2-0c33-434b-8d7b-50d4faebc6f5?showAssistant=true&showPreview=true",
-          label: "Live demo",
+          platform: "youtube",
+          url: "https://youtu.be/6yQ7kdwx-cY",
+          label: "Video 1",
+          description:
+            "I added this feature to the tool which we built. It is very simple to use and just in 3 steps you get your property video. At first add the images clicked, then enter the prompt and click on generate video. Google Video Model veo's API was used in the backend.",
         },
       ],
+      links: [],
     },
     {
       id: "solar",
@@ -278,15 +275,7 @@ window.LR_DATA = {
         { value: "100%", label: "100% Calendar Efficiency for Closing Reps" },
         { value: "85%+", label: "85%+ Appointment Show-Up Rate" },
       ],
-      videos: [
-        {
-          platform: "youtube",
-          url: "https://youtu.be/6yQ7kdwx-cY",
-          label: "Video 1",
-          description:
-            "I added this feature to the tool which we built. It is very simple to use and just in 3 steps you get your property video. At first add the images clicked, then enter the prompt and click on generate video. Google Video Model veo's API was used in the backend.",
-        },
-      ],
+      videos: [],
       showcase: [
         {
           type: "video",
