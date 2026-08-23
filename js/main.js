@@ -427,7 +427,17 @@
     <article class="skill-card skill-card-list">
       <h3>${esc(s.title)}</h3>
       <ul class="competency-list">
-        ${s.items.map((item) => `<li>${esc(item)}</li>`).join("")}
+        ${s.items
+          .map((item) => {
+            const idx = item.indexOf(":");
+            if (idx !== -1) {
+              const label = item.substring(0, idx + 1);
+              const val = item.substring(idx + 1);
+              return `<li><strong style="color: var(--accent-deep);">${esc(label)}</strong>${esc(val)}</li>`;
+            }
+            return `<li>${esc(item)}</li>`;
+          })
+          .join("")}
       </ul>
     </article>`;
       }
