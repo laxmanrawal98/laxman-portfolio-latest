@@ -306,7 +306,7 @@ window.LR_DATA = {
 
   skills: [
     {
-      title: "Key Skills And tools",
+      title: "Key Skills & Tools",
       type: "list",
       items: [
         "AI & Automation Tools: n8n, Retell AI, ChatGPT, Claude, Gemini, Gemini Notebook, Google Veo, Nano Banana, Apify.",
