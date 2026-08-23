@@ -532,7 +532,7 @@
     };
 
     const wallBounce = (b, minX, maxX, minY, maxY) => {
-      const restitution = 0.68;
+      const restitution = 0.88;
       if (b.x < minX) {
         b.x = minX;
         b.vx = Math.abs(b.vx) * restitution;
@@ -613,13 +613,22 @@
       bubbles.forEach((b) => {
         if (b.dragging) return;
 
-        b.vy -= 14 * dt;
-        b.vx += (Math.random() - 0.5) * 22 * dt;
-        b.vy += (Math.random() - 0.5) * 16 * dt;
-
-        const drag = Math.pow(0.988, dt * 60);
+        // Gentler drag to preserve momentum
+        const drag = Math.pow(0.993, dt * 60);
         b.vx *= drag;
         b.vy *= drag;
+
+        // Apply a random drift force in all directions (Brownian motion)
+        b.vx += (Math.random() - 0.5) * 75 * dt;
+        b.vy += (Math.random() - 0.5) * 75 * dt;
+
+        // Keep a baseline speed so they never fully stop
+        const speed = Math.hypot(b.vx, b.vy);
+        if (speed < 20) {
+          const angle = Math.random() * Math.PI * 2;
+          b.vx += Math.cos(angle) * 12;
+          b.vy += Math.sin(angle) * 12;
+        }
 
         b.x += b.vx * dt;
         b.y += b.vy * dt;
