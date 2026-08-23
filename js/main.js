@@ -79,7 +79,7 @@
       connectEl.innerHTML = `
         <p class="hero-connect-label">${esc(h.connect.label)}</p>
         <a href="mailto:${esc(h.connect.email)}"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="#e8480c" style="margin-right:4px; vertical-align:middle; position:relative; top:-1px;"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg>${esc(h.connect.email)}</a>
-        <a href="${esc(h.connect.linkedin)}" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="#0a66c2" style="margin-right:4px; vertical-align:middle; position:relative; top:-1px;"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>LinkedIn ↗</a>
+        <a href="${esc(h.connect.linkedin)}" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="#0a66c2" style="margin-right:4px; vertical-align:middle; position:relative; top:-1px;"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>LinkedIn</a>
       `;
     }
   }
@@ -355,24 +355,7 @@
           : ""
       }
       ${
-        p.receipt.length
-          ? `<div class="modal-section">
-              <h3>Impact / before / after</h3>
-              <table class="receipt">
-                <thead><tr><th>Impact area</th><th>Before</th><th>After</th><th>Net</th></tr></thead>
-                <tbody>
-                  ${p.receipt
-                    .map(
-                      (r) =>
-                        `<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td><td>${esc(r[2])}</td><td>${esc(r[3])}</td></tr>`
-                    )
-                    .join("")}
-                </tbody>
-              </table>
-            </div>`
-          : ""
-      }
-      ${
+
         p.images && p.images.length
           ? `<div class="modal-section">
               <h3>Case study visuals</h3>

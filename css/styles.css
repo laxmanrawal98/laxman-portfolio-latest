@@ -769,7 +769,7 @@ body.loaded .stagger { opacity: 1; transform: none; }
 .modal-copy p { color: var(--ink-soft); margin-bottom: 0.8rem; }
 .modal-list li.solution-block { line-height: 1.55; }
 .modal-list li.solution-block br + br { display: block; content: ""; margin-top: 0.35rem; }
-.modal-list { display: grid; gap: 0.55rem; }
+.modal-list { display: grid; gap: 0.35rem; }
 .modal-list li {
   padding-left: 1.4rem; position: relative; color: var(--ink-soft); font-size: 0.92rem;
 }

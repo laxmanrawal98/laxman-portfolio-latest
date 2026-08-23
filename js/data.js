@@ -144,18 +144,10 @@ window.LR_DATA = {
       brief:
         "The client operates a chain of specialized extended-stay residency lodges catering exclusively to long-term medical tourists and families seeking treatment at one of India's top multispecialty research hospitals. Unlike traditional short-stay hotels, guest stays range anywhere from 3 months to 3 years, requiring an operational model that blends long-term lease management, medical amenity support, and flexible billing cycles tailored to extended healthcare treatments.",
       problems: [
-        "1. Uncontrolled Revenue Leakage via Local Transit Interception",
-        "Local auto-rickshaw and cab drivers at key transit hubs (railway stations, bus terminals, and airports) were being bribed with higher commissions by competitor lodges to divert arriving patients and their families.",
-        "Direct loss of high-intent top-of-funnel customer traffic and reduced baseline occupancy despite strong brand reputation.",
-        "2. High Utility Overhead due to Lack of Centralized Energy Control",
-        "Guests leaving air conditioners, water heaters, and appliances running continuously resulted in massive energy wastage.",
-        "Electricity bills inflated to nearly ₹18 Lakhs per annum across the 3 properties due to the complete absence of smart, centralized power monitoring or automated energy management controls.",
-        "3. Missed Bookings & Lead Drop-Off Outside Working Hours",
-        "Room reservations relied entirely on manual phone calls handled by front-desk staff during standard office hours.",
-        "High lead loss from distressed medical tourists calling after hours, long wait times, and zero automated instant-booking mechanisms during peak arrival windows.",
-        "4. Absence of Operational SOPs & Unmonitored Staff Execution",
-        "Housekeeping, room maintenance, and daily cleaning requests were handled informally over verbal requests or unorganized phone calls to staff.",
-        "Management had zero visibility into staff task completion, turnaround times, or unfulfilled guest service requests, leading to guest dissatisfaction and uncollected feedback.",
+        "Uncontrolled Revenue Leakage via Local Transit Interception",
+        "High Utility Overhead due to Lack of Centralized Energy Control",
+        "Missed Bookings & Lead Drop-Off Outside Working Hours",
+        "Absence of Operational SOPs & Unmonitored Staff Execution",
       ],
       solutions: [
         "WhatsApp AI Interception & Automated Transit Pickup Network\nBuilt an automated customer onboarding pipeline that connected WhatsApp AI booking agents directly with a trusted partner transit fleet.\nThe WhatsApp AI agent collected arrival details (train/flight numbers and expected arrival times) during the booking process. Upon confirmation, the system automatically dispatched verified drivers to pick up guests at transit hubs, sending automated vehicle and driver details directly to the guest's WhatsApp, completely bypassing third-party driver interception.",
@@ -164,7 +156,7 @@ window.LR_DATA = {
         "Centralized Operations Dashboard & WhatsApp Task Dispatch Engine\nDeveloped a unified operational command center for staff service management and real-time owner oversight.\nGuests submitted housekeeping, room service, or maintenance requests directly through WhatsApp. Requests automatically created tracked service tickets on the central staff dashboard, notifying property owners of response times, unfulfilled requests, and post-service customer feedback ratings to enforce strict staff accountability.",
       ],
       impacts: [
-        "75% Reduction in Energy Costs: Smart IoT power cut-offs and motion sensor controls slashed annual electricity expenditure from ₹18 Lakhs to ~₹5.7 Lakhs.",
+        "20% Reduction in Energy Costs: Smart IoT power cut-offs and motion sensor controls slashed annual electricity expenditure from ₹22 Lakhs to ~₹17.6 Lakhs.",
         "35% Surge in Top-of-Funnel Conversion: Direct transit pick-ups and 24/7 AI booking availability eliminated driver interception and missed after-hours leads.",
         "Zero After-Hours Lead Loss: The 24/7 AI voice and WhatsApp booking agents captured 100% of off-hour queries, converting high-intent medical travelers overnight.",
         "100% Request Transparency: Owners gained real-time visibility into staff response rates, driving housekeeping turnaround times down by 60%.",
@@ -176,7 +168,7 @@ window.LR_DATA = {
         ["Service Request Tracking", "Unmonitored / Verbal", "100% Digitized", "Complete Transparency"],
       ],
       metrics: [
-        { value: "75%", label: "75% Reduction in Energy Costs" },
+        { value: "20%", label: "20% Reduction in Energy Costs" },
         { value: "35%", label: "35% Surge in Top-of-Funnel Conversion" },
         { value: "100%", label: "100% Request Transparency" },
       ],
