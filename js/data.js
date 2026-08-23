@@ -237,6 +237,13 @@ window.LR_DATA = {
           description:
             "I added this feature to the tool which we built. It is very simple to use and just in 3 steps you get your property video. At first add the images clicked, then enter the prompt and click on generate video. Google Video Model veo's API was used in the backend.",
         },
+        {
+          platform: "youtube",
+          url: "https://youtu.be/Yq9qxvPYJmo",
+          label: "Video 2",
+          description:
+            "This video showcases a real estate AI-powered tool that allows you to not only manage leads but also acquire new prospects through its lookup features. Sourcing is handled by integrating the LinkedIn API [Apify] to discover high-value targets, while marketing materials are created using an integrated pipeline that generates promo videos from high-quality property images via the Google Veo Models API.",
+        },
       ],
       links: [],
     },
