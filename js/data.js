@@ -327,7 +327,7 @@ window.LR_DATA = {
     { name: "Monday.com", icon: "assets/logos/monday.svg" },
     { name: "ChatGPT", icon: "assets/logos/openai.svg" },
     { name: "Claude", icon: "https://cdn.simpleicons.org/claude/D97757" },
-    { name: "Gemini Notebook", icon: "https://cdn.simpleicons.org/googlecolab/F9AB00" },
+    { name: "Gemini Notebook", icon: "https://upload.wikimedia.org/wikipedia/commons/e/e0/NotebookLM_logo.svg" },
     { name: "Jira", icon: "https://cdn.simpleicons.org/jira/0052CC" },
     { name: "Miro", icon: "https://cdn.simpleicons.org/miro/FFD02F" },
     { name: "Gemini", icon: "https://cdn.simpleicons.org/googlegemini/8E75B2" },
