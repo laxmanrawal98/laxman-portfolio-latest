@@ -605,6 +605,19 @@
       b.el.style.transform = `translate(-50%, -50%) scale(${1 + squash * 0.35}, ${1 - squash * 0.45}) rotate(${tilt}deg)`;
     };
 
+    let mode = "home";
+    setInterval(() => {
+      mode = mode === "home" ? "disperse" : "home";
+      if (mode === "disperse") {
+        bubbles.forEach((b) => {
+          if (!b.dragging) {
+            b.vx = (Math.random() - 0.5) * 280;
+            b.vy = (Math.random() - 0.5) * 280;
+          }
+        });
+      }
+    }, 7000);
+
     const tick = (now) => {
       const dt = Math.min((now - (tick.prev || now)) / 1000, 0.032);
       tick.prev = now;
@@ -615,19 +628,44 @@
       bubbles.forEach((b) => {
         if (b.dragging) return;
 
-        // Gentle spring force pulling each bubble back to its layout position
-        b.vx += (b.homeX - b.x) * 3.2 * dt;
-        b.vy += (b.homeY - b.y) * 3.2 * dt;
+        if (mode === "home") {
+          // Spring force pulling each bubble back to its layout position
+          b.vx += (b.homeX - b.x) * 3.5 * dt;
+          b.vy += (b.homeY - b.y) * 3.5 * dt;
 
-        // Elegant sinusoidal sway so they feel alive and floating
-        const t = now * 0.0016 + b.radius;
-        b.vx += Math.sin(t) * 26 * dt;
-        b.vy += Math.cos(t * 1.3) * 22 * dt;
+          // Elegant sinusoidal sway so they feel alive and floating
+          const t = now * 0.0016 + b.radius;
+          b.vx += Math.sin(t) * 26 * dt;
+          b.vy += Math.cos(t * 1.3) * 22 * dt;
 
-        // Balanced damping for smooth settling
-        const drag = Math.pow(0.95, dt * 60);
-        b.vx *= drag;
-        b.vy *= drag;
+          // Balanced damping for smooth settling
+          const drag = Math.pow(0.94, dt * 60);
+          b.vx *= drag;
+          b.vy *= drag;
+        } else {
+          // Disperse mode: no home pull, gently float and drift around
+          b.vx += (Math.random() - 0.5) * 75 * dt;
+          b.vy += (Math.random() - 0.5) * 75 * dt;
+
+          // Maintain a minimum speed to keep them moving
+          const speed = Math.hypot(b.vx, b.vy);
+          if (speed < 18) {
+            const angle = Math.random() * Math.PI * 2;
+            b.vx += Math.cos(angle) * 8 * dt * 60;
+            b.vy += Math.sin(angle) * 8 * dt * 60;
+          }
+
+          // Damping for natural kinetic decay
+          const drag = Math.pow(0.985, dt * 60);
+          b.vx *= drag;
+          b.vy *= drag;
+
+          const maxSpeed = 75;
+          if (speed > maxSpeed) {
+            b.vx = (b.vx / speed) * maxSpeed;
+            b.vy = (b.vy / speed) * maxSpeed;
+          }
+        }
 
         b.x += b.vx * dt;
         b.y += b.vy * dt;
