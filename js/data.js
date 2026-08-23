@@ -17,7 +17,7 @@ window.LR_DATA = {
       id: "scalify",
       company: "Scalify With AI",
       role: "Ex-Founder",
-      dates: "Jan 2025 - Present",
+      dates: "Jun 2025 - Present",
       location: "Remote / India",
       tag: "Founder",
       summary:
@@ -58,7 +58,7 @@ window.LR_DATA = {
       id: "ca",
       company: "GRV & PK Associates",
       role: "CA Article",
-      dates: "Feb 2020 - Dec 2020",
+      dates: "Feb 2018 - Dec 2020",
       location: "India",
       tag: "Articleship",
       summary:
