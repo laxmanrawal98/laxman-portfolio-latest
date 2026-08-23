@@ -517,9 +517,11 @@
     const layoutBubble = (b) => {
       const { w, h } = bounds();
       b.radius = Math.max(b.el.offsetWidth, b.el.offsetHeight) * 0.5;
+      b.homeX = padCenter(w, b.startRatio.x, b.radius);
+      b.homeY = padCenter(h, b.startRatio.y, b.radius);
       if (!b.placed) {
-        b.x = padCenter(w, b.startRatio.x, b.radius);
-        b.y = padCenter(h, b.startRatio.y, b.radius);
+        b.x = b.homeX;
+        b.y = b.homeY;
         b.placed = true;
       }
     };
@@ -613,29 +615,19 @@
       bubbles.forEach((b) => {
         if (b.dragging) return;
 
-        // Balanced damping for natural momentum
-        const drag = Math.pow(0.98, dt * 60);
+        // Gentle spring force pulling each bubble back to its layout position
+        b.vx += (b.homeX - b.x) * 3.2 * dt;
+        b.vy += (b.homeY - b.y) * 3.2 * dt;
+
+        // Elegant sinusoidal sway so they feel alive and floating
+        const t = now * 0.0016 + b.radius;
+        b.vx += Math.sin(t) * 26 * dt;
+        b.vy += Math.cos(t * 1.3) * 22 * dt;
+
+        // Balanced damping for smooth settling
+        const drag = Math.pow(0.95, dt * 60);
         b.vx *= drag;
         b.vy *= drag;
-
-        // Active random drift force (Brownian motion)
-        b.vx += (Math.random() - 0.5) * 35 * dt;
-        b.vy += (Math.random() - 0.5) * 35 * dt;
-
-        // Maintain a good, visible drift speed
-        const speed = Math.hypot(b.vx, b.vy);
-        if (speed < 12) {
-          const angle = Math.random() * Math.PI * 2;
-          b.vx += Math.cos(angle) * 5 * dt * 60;
-          b.vy += Math.sin(angle) * 5 * dt * 60;
-        }
-
-        // Cap maximum speed to prevent wild acceleration
-        const maxSpeed = 48;
-        if (speed > maxSpeed) {
-          b.vx = (b.vx / speed) * maxSpeed;
-          b.vy = (b.vy / speed) * maxSpeed;
-        }
 
         b.x += b.vx * dt;
         b.y += b.vy * dt;
