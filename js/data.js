@@ -144,18 +144,10 @@ window.LR_DATA = {
       brief:
         "The client operates a chain of specialized extended-stay residency lodges catering exclusively to long-term medical tourists and families seeking treatment at one of India's top multispecialty research hospitals. Unlike traditional short-stay hotels, guest stays range anywhere from 3 months to 3 years, requiring an operational model that blends long-term lease management, medical amenity support, and flexible billing cycles tailored to extended healthcare treatments.",
       problems: [
-        "Uncontrolled Revenue Leakage via Local Transit Interception",
-        "Local auto-rickshaw and cab drivers at key transit hubs (railway stations, bus terminals, and airports) were being bribed with higher commissions by competitor lodges to divert arriving patients and their families.",
-        "Direct loss of high-intent top-of-funnel customer traffic and reduced baseline occupancy despite strong brand reputation.",
-        "High Utility Overhead due to Lack of Centralized Energy Control",
-        "Guests leaving air conditioners, water heaters, and appliances running continuously resulted in massive energy wastage.",
-        "Electricity bills inflated to nearly ₹18 Lakhs per annum across the 3 properties due to the complete absence of smart, centralized power monitoring or automated energy management controls.",
-        "Missed Bookings & Lead Drop-Off Outside Working Hours",
-        "Room reservations relied entirely on manual phone calls handled by front-desk staff during standard office hours.",
-        "High lead loss from distressed medical tourists calling after hours, long wait times, and zero automated instant-booking mechanisms during peak arrival windows.",
-        "Absence of Operational SOPs & Unmonitored Staff Execution",
-        "Housekeeping, room maintenance, and daily cleaning requests were handled informally over verbal requests or unorganized phone calls to staff.",
-        "Management had zero visibility into staff task completion, turnaround times, or unfulfilled guest service requests, leading to guest dissatisfaction and uncollected feedback.",
+        "Uncontrolled Revenue Leakage via Local Transit Interception\nLocal auto-rickshaw and cab drivers at key transit hubs (railway stations, bus terminals, and airports) were being bribed with higher commissions by competitor lodges to divert arriving patients and their families.\nDirect loss of high-intent top-of-funnel customer traffic and reduced baseline occupancy despite strong brand reputation.",
+        "High Utility Overhead due to Lack of Centralized Energy Control\nGuests leaving air conditioners, water heaters, and appliances running continuously resulted in massive energy wastage.\nElectricity bills inflated to nearly ₹18 Lakhs per annum across the 3 properties due to the complete absence of smart, centralized power monitoring or automated energy management controls.",
+        "Missed Bookings & Lead Drop-Off Outside Working Hours\nRoom reservations relied entirely on manual phone calls handled by front-desk staff during standard office hours.\nHigh lead loss from distressed medical tourists calling after hours, long wait times, and zero automated instant-booking mechanisms during peak arrival windows.",
+        "Absence of Operational SOPs & Unmonitored Staff Execution\nHousekeeping, room maintenance, and daily cleaning requests were handled informally over verbal requests or unorganized phone calls to staff.\nManagement had zero visibility into staff task completion, turnaround times, or unfulfilled guest service requests, leading to guest dissatisfaction and uncollected feedback.",
       ],
       solutions: [
         "WhatsApp AI Interception & Automated Transit Pickup Network\nBuilt an automated customer onboarding pipeline that connected WhatsApp AI booking agents directly with a trusted partner transit fleet.\nThe WhatsApp AI agent collected arrival details (train/flight numbers and expected arrival times) during the booking process. Upon confirmation, the system automatically dispatched verified drivers to pick up guests at transit hubs, sending automated vehicle and driver details directly to the guest's WhatsApp, completely bypassing third-party driver interception.",

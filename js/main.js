@@ -334,7 +334,7 @@
         p.problems.length
           ? `<div class="modal-section">
         <h3>Problem statement</h3>
-        <ul class="modal-list">${p.problems.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>
+        <ul class="modal-list">${p.problems.map((t) => `<li class="solution-block">${withBreaks(t)}</li>`).join("")}</ul>
       </div>`
           : ""
       }
