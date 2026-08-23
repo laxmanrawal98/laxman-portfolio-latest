@@ -613,25 +613,25 @@
       bubbles.forEach((b) => {
         if (b.dragging) return;
 
-        // Stronger damping so they slow down gently and don't slide around wildly
-        const drag = Math.pow(0.945, dt * 60);
+        // Balanced damping for natural momentum
+        const drag = Math.pow(0.98, dt * 60);
         b.vx *= drag;
         b.vy *= drag;
 
-        // Very gentle random wander force (drifting)
-        b.vx += (Math.random() - 0.5) * 14 * dt;
-        b.vy += (Math.random() - 0.5) * 14 * dt;
+        // Active random drift force (Brownian motion)
+        b.vx += (Math.random() - 0.5) * 35 * dt;
+        b.vy += (Math.random() - 0.5) * 35 * dt;
 
-        // Maintain a tiny, slow drift so they stay in motion
+        // Maintain a good, visible drift speed
         const speed = Math.hypot(b.vx, b.vy);
-        if (speed < 5) {
+        if (speed < 12) {
           const angle = Math.random() * Math.PI * 2;
-          b.vx += Math.cos(angle) * 1.5 * dt * 60;
-          b.vy += Math.sin(angle) * 1.5 * dt * 60;
+          b.vx += Math.cos(angle) * 5 * dt * 60;
+          b.vy += Math.sin(angle) * 5 * dt * 60;
         }
 
-        // Cap maximum speed to keep it extremely calm and professional
-        const maxSpeed = 22;
+        // Cap maximum speed to prevent wild acceleration
+        const maxSpeed = 48;
         if (speed > maxSpeed) {
           b.vx = (b.vx / speed) * maxSpeed;
           b.vy = (b.vy / speed) * maxSpeed;
