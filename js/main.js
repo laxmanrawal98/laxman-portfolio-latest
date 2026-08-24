@@ -21,16 +21,12 @@
 
   /* ---------- Scroll chrome ---------- */
   const bar = document.querySelector(".progress i");
-  let lastY = window.scrollY;
   let ticking = false;
   const onScroll = () => {
     const y = window.scrollY;
     const max = document.documentElement.scrollHeight - window.innerHeight;
     if (bar) bar.style.transform = `scaleX(${max > 0 ? y / max : 0})`;
     document.body.classList.toggle("nav-solid", y > 40);
-    if (y > 160 && y > lastY + 4) document.body.classList.add("nav-hidden");
-    else if (y < lastY - 4 || y <= 160) document.body.classList.remove("nav-hidden");
-    lastY = y;
     ticking = false;
   };
   window.addEventListener(
