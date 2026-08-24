@@ -71,12 +71,16 @@ body.loaded .preloader { transform: translateY(-100%); visibility: hidden; }
   position: fixed; top: 0; left: 0; right: 0; z-index: 900;
   display: grid; grid-template-columns: 1fr auto 1fr; align-items: center;
   gap: 1rem; padding: 1.1rem var(--pad);
-  transition: transform 0.45s var(--ease), background 0.3s;
+  transition: transform 0.45s var(--ease), background 0.3s, opacity 0.3s var(--ease);
 }
 body.nav-solid .nav {
   background: color-mix(in srgb, var(--paper) 88%, transparent);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
+  opacity: 0.55;
+}
+body.nav-solid .nav:hover {
+  opacity: 1;
 }
 body.nav-hidden .nav { transform: translateY(-110%); }
 .nav-brand { font-weight: 800; font-size: 1.15rem; letter-spacing: 0.02em; justify-self: start; }
