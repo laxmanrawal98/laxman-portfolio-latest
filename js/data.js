@@ -316,7 +316,7 @@ window.LR_DATA = {
       title: "Key Skills & Tools",
       type: "list",
       items: [
-        "AI & Automation Tools: n8n, Retell AI, ChatGPT, Claude, Gemini, Gemini Notebook, Google Veo, Nano Banana, Apify.",
+        "AI & Automation Tools: Retell AI, ChatGPT, Claude, Gemini, Gemini Notebook, Google Veo, Nano Banana, Apify.",
         "Operations & Project Management: Asana, Jira, Monday.com, Miro, Process Engineering, SOP Development, Bottleneck Elimination, Root Cause Analysis.",
         "Revenue Ops & Lead Systems: Speed-to-Lead Architecture, Lead Attribution, Conversational AI Agents, Inbound Qualification Funnels, CRM/Pipeline Automation.",
         "Data & Risk Analysis: Fraud Investigation, Defect Reduction, Executive Dashboards, Attribution Modeling, Operational Leakage Auditing.",
@@ -341,7 +341,6 @@ window.LR_DATA = {
     { name: "Google Veo", icon: "https://cdn.simpleicons.org/google/4285F4" },
     { name: "Retell AI", label: "Retell AI", shape: "oval", color: "#111111" },
     { name: "Nano Banana", label: "Nano Banana", shape: "oval", color: "#4285F4" },
-    { name: "n8n", icon: "https://cdn.simpleicons.org/n8n/EA4B71" },
     { name: "Apify", label: "Apify", color: "#97D700" },
   ],
 };
