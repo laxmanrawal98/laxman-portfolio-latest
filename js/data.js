@@ -9,6 +9,7 @@ window.LR_DATA = {
       label: "Connect With me:",
       email: "hello@laxmanrawal.in",
       linkedin: "https://www.linkedin.com/in/laxmanrawal98/",
+      resume: "assets/Laxman_Rawal_Resume.pdf",
     },
   },
 
