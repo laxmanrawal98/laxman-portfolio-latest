@@ -133,7 +133,12 @@ window.LR_DATA = {
             "The Upscape Build WhatsApp Agent provides users with instant, automated construction cost estimates through an intuitive interactive chat. By guiding clients through a quick step-by-step process capturing key details such as project type (Residential or Commercial), location, plot size, and layout configuration (from BHKs to Duplexes and Villas). The agent automatically generates a personalized project enquiry summary and estimated cost range. It streamlines lead capture, provides immediate budget clarity to prospective clients, and seamlessly directs them to connect with a representative or visit the official website.",
         },
       ],
-      links: [],
+      links: [
+        {
+          href: "https://upscape-build-lac.vercel.app/",
+          label: "Live Demo",
+        }
+      ],
     },
     {
       id: "residency",

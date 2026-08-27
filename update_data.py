@@ -149,7 +149,12 @@ META = {
             {"id": "1-zH_JhgkgWLqXXxfeAq09YMZBe4FWhI7", "label": "Product walkthrough"},
             {"id": "1nXAJu1t9LiakHJFxbnnRB3g-Heuxa3Yj", "label": "WhatsApp booking agent"},
         ],
-        "links": [],
+        "links": [
+            {
+                "href": "https://upscape-build-lac.vercel.app/",
+                "label": "Live Demo",
+            }
+        ],
     },
     "residency": {
         "id": "residency",
