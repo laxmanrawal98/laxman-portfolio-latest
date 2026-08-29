@@ -2,8 +2,8 @@
 window.LR_DATA = {
   hero: {
     name: "I'm Laxman Rawal",
-    role: "Founder’s Office | Program Manager | AI Solutions Architect | Agentic Workflows & Multi-Agent Systems",
-    bio: "AI-native operator and ex-founder specializing in multi-agent workflows, voice agents, and ERP automation instrumented against real P&L impact. Shipped GenAI systems across construction, real estate, and healthcare while driving 0 to 1 initiatives with complete ownership in high-ambiguity environments.",
+    role: "Operations Manager | Program Manager | Founder’s Office & Strategy Execution",
+    bio: "AI-native Operations Leader and Ex-Founder driving 0-to-1 execution, process optimization, and scalable workflow design. Leverages strong financial acumen (CA-Inter) alongside practical AI automation (voice agents, LLM workflows) to eliminate operational bottlenecks, slash turnaround times, and drive direct P&L growth. Known for extreme ownership, cross-functional leadership, and building high-velocity operational engines in high-ambiguity environments.",
     photo: "assets/profile.png",
     connect: {
       label: "Connect With me:",
